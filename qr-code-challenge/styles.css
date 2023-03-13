@@ -22,7 +22,34 @@ body {
     overflow: hidden;
 }
 
-/* Base settings (Phone mode)(320-480px)*/
+/* Back Button */
+
+.back a{
+    background-color: var(--white);
+    color: var(--GrayishBlue);
+    border-radius: 30px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0px 7px 15px 1px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.back a:hover {
+    transform: scale(1.1);
+    color: var(--darkBlue);
+}
+
+
+
+/* Back Button End */
+
+/* QR Tag (Reminder: Phone mode ~ 320-480px)*/
 
 .tag-wrapper {
     display: flex;
@@ -79,7 +106,8 @@ body {
     padding: 1rem;
 }
 
-/* Desktop */
+/* QR Tag End*/
+
 
 @media screen and (min-width: 1440px) {
     

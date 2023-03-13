@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --night-blue: rgb(1, 15, 46);
+    --dark-blue: rgb(17, 27, 84);
+    --dark-cloud: rgb(49, 54, 122);
+    --cloud-blue: rgb(101, 105, 161);
+    --royal-blue: rgb(0, 32, 161);
+    --bright-blue: rgb(0, 51, 255);
+    --light-blur: rgb(43, 86, 255);
+    --ice-blue: rgb(141, 177, 214);
+    --pale-ice: rgb(232, 249, 255);
+    --spring-green: rgb(58, 176, 88);
+    --deep-green: rgb(11, 128, 54);
+    --emerald-green: rgb(33, 105, 52);
+    --pastel-pink: rgb(255, 184, 236);
+    --pastel-purple: rgb(223, 184, 255);
+    --pastel-red: rgb(255, 184, 186);
+    --pastel-blue: rgb(184, 229, 255);
+    --pastel-green: rgb(184, 255, 218);
+    --pastel-yellow: rgb(242, 255, 184);
+    --pastel-orange: rgb(255, 233, 184);
+    --deep-pink: rgb(214, 84, 168);
+    --deep-orange: rgb(247, 155, 42);
+    --deep-red: rgb(252, 78, 96);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-blue);
+    color: aliceblue;
+    font-family: "Open Sans", "Outfit", sans-serif;
+}
+
+img {
+    object-fit: cover;
+}
+
+
+    /* Projects Section */
+.projects {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+
+}
+
+
+/*Project Grid*/
+
+
+.proj-grid {
+    margin-top: 3rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: var(--night-blue);
+    box-shadow: inset 0px 0px 10px 0px #000000;
+    width: 80vw;
+    justify-content: space-evenly;
+    border-radius: 20px;
+}
+
+
+/*Project Grid End*/
+/* Project cards */
+
+.project {
+    display: flex;
+    position: relative;
+}
+.project img {
+    max-width: 200px;
+    max-height: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #000000;
+    transition: 0.3s ease;
+    filter: brightness(50%);
+    cursor: pointer;
+}
+
+.project img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 4px aliceblue;
+    filter: brightness(100%);
+    
+}
+
+.project .text-wrapper {
+    position: absolute;
+
+}
+
+/* Project cards End*/
+
+
+
+    /* Projects Section End*/
+
+
+@media screen and (max-width: 991px) {
+    
+    
+} /* Large tablets */
+
+@media screen and (max-width: 767px) {
+
+
+} /* Medium Tablets */
+
+@media screen and (max-width: 479px) {
+
+
+} /* Phone screns */
