@@ -11,7 +11,7 @@
     --paleBlue: hsl(221, 100%, 96%);
     --lightLavender: hsl(241, 100%, 89%);
     --darkGrayBlue: hsl(224, 30%, 27%);
-    --lightSlateBlue: hsl(252, 100%, 67%):;
+    --lightSlateBlue: hsl(252, 100%, 67%);
     --lightRoyalBlue: hsl(241, 81%, 54%);
     --violetBlue: hsla(256, 72%, 46%, 1);
     --persianBlue: hsla(241, 72%, 46%, 0);
@@ -54,7 +54,140 @@ body {
 
 /* Back Button End */
 
+/* Score Section */
 
+.sum-wrap {
+    height: 40vh;
+    width: 100vw;
+    background: linear-gradient(var(--lightSlateBlue), var(--lightRoyalBlue));
+    color: hsl(0, 0%, 75%);
+    font-weight: 500;
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 20px;
+}
+
+.res {
+    margin-top: 20px;
+}
+
+.score-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(var(--violetBlue), var(--persianBlue));
+    border-radius: 50%;
+}
+
+.score {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.comparison span {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.comparison {
+    width: 80vw;
+}
+
+/* Score Section End*/
+
+/* Details section */
+
+.details-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    row-gap: 1rem;
+}
+
+#sum {
+    margin-left: 5vw;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+#details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+#details span {
+    font-weight: lighter;
+}
+
+.d-sect {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    padding: 0.75rem;
+    border-radius: 10px; 
+    font-weight: bold;
+}
+
+.d-sect:nth-of-type(1) {
+    background-color: hsla(0, 100%, 67%, 0.05);
+    color: hsl(0, 100%, 67%);
+}
+
+.d-sect:nth-of-type(2) {
+    background-color: hsla(39, 100%, 56%, 0.05);
+    color: hsl(39, 100%, 56%);
+}
+
+.d-sect:nth-of-type(3) {
+    background-color: hsla(166, 100%, 37%, 0.05);
+    color: hsl(166, 100%, 37%);
+}
+
+.d-sect:nth-of-type(4) {
+    background-color: hsla(234, 85%, 45%, 0.05);
+    color: hsl(234, 85%, 45%);
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 0.5rem;
+}
+
+.right {
+    color: black;
+}
+
+.continue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 70px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.continue:hover {
+    background: linear-gradient(var(--lightSlateBlue), var(--lightRoyalBlue));
+}
+
+
+
+/* Details section End*/
 
 /* Attribution */
 
