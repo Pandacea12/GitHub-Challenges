@@ -45,8 +45,6 @@ body {
     color: var(--darkBlue);
 }
 
-
-
 /* Back Button End */
 
 /* QR Tag (Reminder: Phone mode ~ 320-480px)*/
@@ -96,6 +94,11 @@ body {
     font-size: 1.3rem;
 }
 
+
+/* QR Tag End*/
+
+/* Attribution */
+
 .attribution {
     position: absolute;
     display: flex;
@@ -106,7 +109,7 @@ body {
     padding: 1rem;
 }
 
-/* QR Tag End*/
+/* Attribution End*/
 
 
 @media screen and (min-width: 1440px) {
