@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+:root {
+    --night-blue: rgb(1, 15, 46);
+    --dark-blue: rgb(17, 27, 84);
+    --dark-cloud: rgb(49, 54, 122);
+    --cloud-blue: rgb(101, 105, 161);
+    --royal-blue: rgb(0, 32, 161);
+    --bright-blue: rgb(0, 51, 255);
+    --light-blur: rgb(43, 86, 255);
+    --ice-blue: rgb(141, 177, 214);
+    --pale-ice: rgb(232, 249, 255);
+    --spring-green: rgb(58, 176, 88);
+    --deep-green: rgb(11, 128, 54);
+    --emerald-green: rgb(33, 105, 52);
+    --pastel-pink: rgb(255, 184, 236);
+    --pastel-purple: rgb(223, 184, 255);
+    --pastel-red: rgb(255, 184, 186);
+    --pastel-blue: rgb(184, 229, 255);
+    --pastel-green: rgb(184, 255, 218);
+    --pastel-yellow: rgb(242, 255, 184);
+    --pastel-orange: rgb(255, 233, 184);
+    --deep-pink: rgb(214, 84, 168);
+    --deep-orange: rgb(247, 155, 42);
+    --deep-red: rgb(252, 78, 96);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 991px) {
+    
+    
+} /* Large tablets */
+
+@media screen and (max-width: 767px) {
+
+
+} /* Medium Tablets */
+
+@media screen and (max-width: 479px) {
+
+
+} /* Phone screns */
