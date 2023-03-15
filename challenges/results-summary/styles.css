@@ -15,6 +15,7 @@
     --lightRoyalBlue: hsl(241, 81%, 54%);
     --violetBlue: hsla(256, 72%, 46%, 1);
     --persianBlue: hsla(241, 72%, 46%, 0);
+    --lightGray: hsl(212, 45%, 89%);
 }
 
 *{
@@ -204,17 +205,28 @@ body {
 /* Attribution End*/
 
 
-@media screen and (max-width: 991px) {
+/* tablets  and computer*/
+@media screen and (min-width: 480px) {
+    .body {
+        background-color: var(--lightGray);
+    }
+    .summary {
+        width: 500px;
+        height: 450px;
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+    }
+
+    .sum-wrap {
+        width: 250px;
+        height: 450px;
+    }
+
+    .details-wrap {
+        width: 250px;
+        height: 450px;
+    }
     
-    
-} /* Large tablets */
+} 
 
-@media screen and (max-width: 767px) {
-
-
-} /* Medium Tablets */
-
-@media screen and (max-width: 479px) {
-
-
-} /* Phone screns */
