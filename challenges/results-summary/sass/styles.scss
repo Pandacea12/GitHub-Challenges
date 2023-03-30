@@ -6,7 +6,7 @@
 body {
     font-family: "HankenGrotesk", sans-serif;
     font-size: 18px;
-    color: black;
+    color: colors.$darkGrayBlue;
     overflow: hidden;
 }
 
@@ -31,8 +31,8 @@ body {
     color: colors.$white;
 }
 
-.results, .summary {
-    max-width: 23rem;
+.section {
+    width: 23rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,9 +42,6 @@ body {
 
 }
 
-.summary {
-    width: 23rem;
-}
 
 button {
     color: colors.$white;
@@ -52,12 +49,74 @@ button {
     padding: 1rem 2rem;
     border: 0;
     border-radius: 100vw;
+    width: 17rem;
     cursor: pointer;
 
     &:hover {
         background: colors.$gradient1;
     }    
 };
+
+.d-sect{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 17rem;
+    border-radius: 5px;
+    margin: 20px 0 20px 0;
+    padding: 10px;
+    font-weight: 500;
+    
+    &:nth-of-type(1){
+        background-color: colors.$paleRed;
+        color: colors.$lightRed;
+    }
+    &:nth-of-type(2){
+        background-color: colors.$paleYellow;
+        color: colors.$orangeYellow;
+    }
+    &:nth-of-type(3){
+        background-color: colors.$paleTeal;
+        color: colors.$greenTeal;
+    }
+    &:nth-of-type(4){
+        background-color: colors.$paleBlue;
+        color: colors.$cobaltblue;
+    }
+};
+
+.right {
+    
+    font-weight: 900;
+    color: colors.$lightGrayBlue;
+    span {
+        color: colors.$darkGrayBlue;
+    }
+    
+};
+
+.left {
+    display: flex;
+    flex-direction: row;
+    
+    img {
+        margin-right: 1rem;
+    }
+};
+
+.result-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    background: colors.$gradient2;
+}
+
+
+
 
 
 /* Common Settings End*/
