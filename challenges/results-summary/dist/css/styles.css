@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: "HankenGrotesk";
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format("truetype");
+}
+body {
+  font-family: "HankenGrotesk", sans-serif;
+  font-size: 18px;
+  color: black;
+  overflow: hidden;
+}
+
+/* Common Settings */
+#results-summary {
+  max-width: 46rem;
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 10px 30px -5px hsl(221, 100%, 96%);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.results {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 20px;
+  color: hsl(0, 0%, 100%);
+}
+
+.results, .summary {
+  max-width: 23rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  padding: 2rem;
+}
+
+.summary {
+  width: 23rem;
+}
+
+button {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(224, 30%, 27%);
+  padding: 1rem 2rem;
+  border: 0;
+  border-radius: 100vw;
+  cursor: pointer;
+}
+button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+/* Common Settings End*/
+/*Desktop settings*/
+@media screen and (min-width: 700px) {
+  body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: hsl(0, 0%, 100%);
+  }
+  .results-summary {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 700px) {
+  .results-summary {
+    flex-direction: column;
+  }
+}
+/*Desktop settings End*/

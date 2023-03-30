@@ -1,0 +1,21 @@
+
+
+$lightRed: hsl(0, 100%, 67%);
+$orangeYellow: hsl(39, 100%, 56%);
+$greenTeal: hsl(166, 100%, 37%);
+$cobaltblue: hsl(234, 85%, 45%);
+
+$slateBlue: hsl(252, 100%, 67%);
+$royalBlue: hsl(241, 81%, 54%);
+$gradient1: linear-gradient($slateBlue, $royalBlue);
+
+$violetBlue: hsla(256, 72%, 46%, 1);
+$persianBlue: hsla(241, 72%, 46%, 0);
+$gradient2: linear-gradient($persianBlue, $violetBlue);
+
+
+$white: hsl(0, 0%, 100%);
+$paleBlue: hsl(221, 100%, 96%);
+$lightLavender: hsl(241, 100%, 89%);
+$darkGrayBlue: hsl(224, 30%, 27%);
+$boxShadow: hsla(241, 72%, 46%, 0.1);
