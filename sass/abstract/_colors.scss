@@ -1,0 +1,47 @@
+// Night theme favored (Low Saturation)
+
+$nightBlue: rgb(1, 15, 46);
+$nightPurple: rgb(25, 2, 71);
+$darkBlue: rgb(17, 27, 84);
+$darkCloud: rgb(49, 54, 122);
+$cloudBlue: rgb(101, 105, 161);
+$iceBlue: rgb(141, 177, 214);
+$paleIce: rgb(232, 249, 255);
+
+// Night Theme Gradient
+
+$nightGradient: linear-gradient($nightPurple, $darkBlue); //purple top to blue bottom
+$nightReverse: linear-gradient($darkBlue, $nightPurple); //blue top to purple bottom
+
+// Pastels
+
+$pRed: rgb(255, 184, 186);
+$pOrange: rgb(255, 233, 184);
+$pYellow: rgb(242, 255, 184);
+$pGreen: rgb(184, 255, 218);
+$pBlue: rgb(184, 229, 255);
+$pPurple: rgb(223, 184, 255);
+$pPink: rgb(255, 184, 236);
+
+// Solid Colors
+
+$sRed: rgb(255, 0, 0);
+$sOrange: rgb(255, 170, 0);
+$sYellow: rgb(255, 255, 0);
+$sGreen: rgb(0, 255, 0);
+$sBlue: rgb(0, 100, 255);
+$sPurple: rgb(140, 0, 255);
+$sPink: rgb(255, 0, 208);
+
+// High Saturation Palette (Blue)
+
+$royalBlue: rgb(0, 32, 161);
+$solidBlue: rgb(0, 51, 255);
+$brightBlue: rgb(43, 86, 255);
+$skyBlue: rgb(56, 185, 255);
+
+// High Saturation Palette (Green)
+
+$emeraldGreen: rgb(33, 105, 52);
+$solidGreen: rgb(11, 128, 54);
+$springGreen: rgb(58, 176, 88);

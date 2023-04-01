@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "HankenGrotesk";
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format("truetype");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: "HankenGrotesk", sans-serif;
+  color: rgb(232, 249, 255);
+  overflow-x: hidden;
+  font-size: 18px;
+}
+
+/*Main Section*/
+.main {
+  height: auto;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(rgb(25, 2, 71), rgb(17, 27, 84));
+  overflow: hidden;
+}
+
+.header {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  border: 2px solid rgb(232, 249, 255);
+  border-radius: 20px;
+  background-color: linear-gradient(rgb(17, 27, 84), rgb(25, 2, 71));
+}
+
+/*Main Section End*/
+/*Projects section*/
+.projects {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+}
+
+.proj-grid {
+  display: flex;
+  flex-direction: row;
+  max-width: 80vw;
+  background: linear-gradient(rgb(17, 27, 84), rgb(25, 2, 71));
+  padding: 2rem;
+  border-radius: 20px;
+  gap: 3.2rem;
+  flex-wrap: wrap;
+}
+
+/*Project cards*/
+.project {
+  position: relative;
+}
+.project img {
+  display: block;
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(33%);
+  z-index: 1;
+  transition: 0.25s ease;
+}
+.project .proj-text {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.25s ease;
+}
+.project .proj-text .card-title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+.project .tech {
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  font-weight: 500;
+  gap: 1rem;
+}
+.project .tech .html {
+  color: rgb(255, 170, 0);
+  transition: 0.25s ease;
+}
+.project .tech .css {
+  color: rgb(56, 185, 255);
+  transition: 0.25s ease;
+}
+.project .tech .scss {
+  color: rgb(255, 184, 236);
+  transition: 0.25s ease;
+}
+.project:hover img {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 30px 9px rgb(184, 229, 255);
+  filter: brightness(100%);
+}
+.project:hover .proj-text, .project:hover .tec {
+  color: transparent;
+}
