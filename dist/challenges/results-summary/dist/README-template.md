@@ -33,7 +33,7 @@ Collated screenshots to make it easier to gather in one picture.
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://pandacea12.github.io/GitHub-Challenges/dist/challenges/results-summary/dist/index.html)
 
 ## My process
 
