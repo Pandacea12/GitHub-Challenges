@@ -22,22 +22,13 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### The challenge
 
-Users should be able to:
-
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+There was an incident when reorganizing the files, but the hover effect on the button should work fine. I havent been able to find a way to make it transition smoothly due to it being a gradient.
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](../assets/images/Image%20Montage.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+Collated screenshots to make it easier to gather in one picture.
 
 ### Links
 
@@ -51,50 +42,27 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [Sass](https://sass-lang.com/) - CSS Extension
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+It was probably ambitious for a second project to apply Sass for the first time as well as shifting the files to a more centralized web page and I ran into several issues with the Sass Watch on VSCode which ultimately led to me deleting the scss sheet for this project after completing it. ( The issue I ran into was that this project's CSS ended up beign copied and applied to the webpage itself).
 
-To see how you can add code snippets, see below:
+For Sass, I leaned about the use of variables, the @use rule and the use of partials to keep my master sheet clean.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+I also learned that the opacity setting in CSS applies to the child elements and cannot be overwritten, so it's simpler to create new variables hsla instead of trying of trying to create multiple divs and clog the html.
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I learned more about Flexbox too, as well as its interactions with the sass notation (Although I gave up for the titles and cheated using absolute positioning to get them on the same level).
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Going forward, I want to get used to working with sass for multiple projects and hopefully avoid a repeat of this project's many incidents.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - It was useful to remind myself of how it worked, considering it was the core of this project.
+- [Sass Documentation](https://sass-lang.com/documentation/) - A useful reminder of how the notation worked.
 
 ## Author
 
