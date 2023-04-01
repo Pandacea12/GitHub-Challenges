@@ -3,33 +3,31 @@
 @use "abstract/font";
 @use "abstract/mixins";
 
+
+
+/* Common Settings */
+
 body {
     font-family: "HankenGrotesk", sans-serif;
     font-size: 18px;
     color: colors.$darkGrayBlue;
     overflow: hidden;
-}
+};
 
-/* Common Settings */
+.section-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 2rem;
+};
 
 #results-summary {
     max-width: 46rem;
     display: flex;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 5px 10px 30px -5px colors.$paleBlue;
-}
-
-.section-title {
-    font-weight: 700;
-    font-size: 1.25rem;
-}
-
-.results {
-    background: colors.$gradient1;
-    border-radius: 20px;
-    color: colors.$white;
-}
+    box-shadow: 5px 10px 30px -5px colors.$lightLavender;
+};
 
 .section {
     width: 23rem;
@@ -37,24 +35,63 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 2rem;
-    padding: 2rem;
+    row-gap: 1.5rem;
+    padding: 4rem 1.75rem 2rem 1.75rem;
+    position: relative;
 
-}
+};
 
+/* Common Settings End*/
 
-button {
-    color: colors.$white;
-    background-color: colors.$darkGrayBlue;
-    padding: 1rem 2rem;
-    border: 0;
-    border-radius: 100vw;
-    width: 17rem;
-    cursor: pointer;
+/* Results Section*/
 
-    &:hover {
-        background: colors.$gradient1;
-    }    
+.results {
+    background: colors.$gradient1;
+    border-radius: 20px;
+    color: colors.$faintWhite;
+};
+
+.result-score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 11rem;
+    height: 11rem;
+    margin: 1rem;
+    border-radius: 50%;
+    background: colors.$gradient2;
+    color: colors.$fainterWhite;
+
+    span {
+        color: colors.$white;
+        font-size: 4.5rem;
+        font-weight: 900;
+    };
+};
+
+.result-rank {
+    display: block;
+    text-align: center;
+
+    .rank {
+        color: colors.$white;
+        font-size: 2rem;
+        font-weight: 600;
+    };
+    .exp {
+        padding: 1rem 2rem 1rem 2rem;
+    }
+};
+
+/* Results Section End*/
+
+/* Summary Section */
+
+.summary {
+    .section-title {
+        left: 3.10rem;
+    };
 };
 
 .d-sect{
@@ -64,8 +101,8 @@ button {
     align-items: center;
     width: 17rem;
     border-radius: 5px;
-    margin: 20px 0 20px 0;
-    padding: 10px;
+    margin: 15px 0 15px 0;
+    padding: 1.25rem 1.10rem 1.25rem 1.10rem;
     font-weight: 500;
     
     &:nth-of-type(1){
@@ -105,21 +142,21 @@ button {
     }
 };
 
-.result-score {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 11rem;
-    height: 11rem;
-    border-radius: 50%;
-    background: colors.$gradient2;
-}
+button {
+    color: colors.$white;
+    background-color: colors.$darkGrayBlue;
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: 100vw;
+    width: 17rem;
+    cursor: pointer;
 
+    &:hover {
+        background: colors.$gradient1;
+    }    
+};
 
-
-
-
-/* Common Settings End*/
+/* Summary Section End*/
 
 /*Desktop settings*/
 
@@ -129,20 +166,67 @@ button {
         display: grid;
         place-items: center;
         background-color: colors.$white;
-    }
+    };
     .results-summary {
         flex-direction: row;
-    }
+    };
 
-    
-
-    
-}
-
-@media screen and (max-width: 700px) {
-    .results-summary {
-        flex-direction: column;
-    }
-} 
+};
 
 /*Desktop settings End*/
+
+/* Phone Settings*/
+
+@media screen and (max-width: 700px) {
+    /* General Mobile Settings*/
+
+    body {
+        overflow: visible;
+        font-size: 16px;
+    };
+
+    #results-summary {
+        flex-direction: column;
+    };
+
+    .section-title {
+        font-size: 1.10rem;
+        font-weight: 600;
+        margin-top: 0.5rem;
+    };
+
+    .section {
+        width: auto;
+        border-radius: 0 0 20px 20px;
+        padding: 0.75rem;
+        row-gap: 1rem;
+    };
+    /* General Mobile Settings End*/
+    /* Results Section Mobile */
+    .result-score {
+        width: 8.5rem;
+        height: 8.5rem;
+        margin: 1rem;
+    
+        span {
+            color: colors.$white;
+            font-size: 3.5rem;
+            font-weight: 700;
+        };
+    };
+    .result-rank {
+        .rank {
+            font-size: 1.5rem;
+        };
+        .exp {
+            padding: 0.75rem 2rem 1rem 1.25rem;
+        }
+    };
+    /* Results Section Mobile End*/
+    .d-sect, button {
+        width: 80vw;
+    }
+    
+};
+
+/* Phone Settings End*/

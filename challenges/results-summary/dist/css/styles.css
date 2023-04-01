@@ -21,6 +21,7 @@ svg {
   font-weight: 100 900;
   src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format("truetype");
 }
+/* Common Settings */
 body {
   font-family: "HankenGrotesk", sans-serif;
   font-size: 18px;
@@ -28,24 +29,19 @@ body {
   overflow: hidden;
 }
 
-/* Common Settings */
+.section-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 2rem;
+}
+
 #results-summary {
   max-width: 46rem;
   display: flex;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 5px 10px 30px -5px hsl(221, 100%, 96%);
-}
-
-.section-title {
-  font-weight: 700;
-  font-size: 1.25rem;
-}
-
-.results {
-  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-  border-radius: 20px;
-  color: hsl(0, 0%, 100%);
+  box-shadow: 5px 10px 30px -5px hsl(241, 100%, 89%);
 }
 
 .section {
@@ -54,21 +50,54 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 2rem;
-  padding: 2rem;
+  row-gap: 1.5rem;
+  padding: 4rem 1.75rem 2rem 1.75rem;
+  position: relative;
 }
 
-button {
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(224, 30%, 27%);
-  padding: 1rem 2rem;
-  border: 0;
-  border-radius: 100vw;
-  width: 17rem;
-  cursor: pointer;
-}
-button:hover {
+/* Common Settings End*/
+/* Results Section*/
+.results {
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 20px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.result-score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 11rem;
+  height: 11rem;
+  margin: 1rem;
+  border-radius: 50%;
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  color: hsla(0, 0%, 100%, 0.5);
+}
+.result-score span {
+  color: hsl(0, 0%, 100%);
+  font-size: 4.5rem;
+  font-weight: 900;
+}
+
+.result-rank {
+  display: block;
+  text-align: center;
+}
+.result-rank .rank {
+  color: hsl(0, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 600;
+}
+.result-rank .exp {
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+/* Results Section End*/
+/* Summary Section */
+.summary .section-title {
+  left: 3.1rem;
 }
 
 .d-sect {
@@ -78,8 +107,8 @@ button:hover {
   align-items: center;
   width: 17rem;
   border-radius: 5px;
-  margin: 20px 0 20px 0;
-  padding: 10px;
+  margin: 15px 0 15px 0;
+  padding: 1.25rem 1.1rem 1.25rem 1.1rem;
   font-weight: 500;
 }
 .d-sect:nth-of-type(1) {
@@ -115,17 +144,20 @@ button:hover {
   margin-right: 1rem;
 }
 
-.result-score {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 11rem;
-  height: 11rem;
-  border-radius: 50%;
-  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+button {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(224, 30%, 27%);
+  padding: 1rem 2rem;
+  border: 0;
+  border-radius: 100vw;
+  width: 17rem;
+  cursor: pointer;
+}
+button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
-/* Common Settings End*/
+/* Summary Section End*/
 /*Desktop settings*/
 @media screen and (min-width: 700px) {
   body {
@@ -138,9 +170,49 @@ button:hover {
     flex-direction: row;
   }
 }
+/*Desktop settings End*/
+/* Phone Settings*/
 @media screen and (max-width: 700px) {
-  .results-summary {
+  /* General Mobile Settings*/
+  body {
+    overflow: visible;
+    font-size: 16px;
+  }
+  #results-summary {
     flex-direction: column;
   }
+  .section-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+  .section {
+    width: auto;
+    border-radius: 0 0 20px 20px;
+    padding: 0.75rem;
+    row-gap: 1rem;
+  }
+  /* General Mobile Settings End*/
+  /* Results Section Mobile */
+  .result-score {
+    width: 8.5rem;
+    height: 8.5rem;
+    margin: 1rem;
+  }
+  .result-score span {
+    color: hsl(0, 0%, 100%);
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  .result-rank .rank {
+    font-size: 1.5rem;
+  }
+  .result-rank .exp {
+    padding: 0.75rem 2rem 1rem 1.25rem;
+  }
+  /* Results Section Mobile End*/
+  .d-sect, button {
+    width: 80vw;
+  }
 }
-/*Desktop settings End*/
+/* Phone Settings End*/
