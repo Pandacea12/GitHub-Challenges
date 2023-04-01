@@ -24,6 +24,8 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 There was an incident when reorganizing the files, but the hover effect on the button should work fine. I havent been able to find a way to make it transition smoothly due to it being a gradient.
 
+Still struggling hosting the webside on Github due to the fact the main index.html is in a sub-folder.
+
 ### Screenshot
 
 ![](../assets/images/Image%20Montage.png)
@@ -66,14 +68,6 @@ Going forward, I want to get used to working with sass for multiple projects and
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Gwenaëlle Laffont](https://pandacea12.github.io/GitHub-Challenges/dist/index.html)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
