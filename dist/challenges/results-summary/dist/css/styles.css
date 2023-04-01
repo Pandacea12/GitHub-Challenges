@@ -255,5 +255,8 @@ button:hover {
   .d-sect, button {
     width: 80vw;
   }
+  .attribution {
+    bottom: -125px;
+  }
 }
 /* Phone Settings End*/
